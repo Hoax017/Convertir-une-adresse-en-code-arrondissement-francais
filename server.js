@@ -18,11 +18,14 @@ server.use('/business-unit/', businessUnitRouter); // all routes about business 
 
 // Error
 server.use((req, res, next) => {
-	if (typeof res.locals.result !== "undefined") return next(); // If we got result we skip error middleware
-	if (res.locals.error) // controller's error
+	if (typeof res.locals.result !== "undefined") {
+		return next(); // If we got result we skip error middleware
+	}
+	if (res.locals.error) {// controller's error
 		res.status(500).json({success: false, error: res.locals.error});
-	else // routing error
+	} else { // routing error
 		res.status(404).json({success: false});
+	}
 });
 
 // Success
