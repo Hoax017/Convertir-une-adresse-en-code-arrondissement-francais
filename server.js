@@ -14,7 +14,7 @@ server.use('/', (req, res, next) => { // all api return content type json
 	next()
 });
 
-server.use('/business-unit/', businessUnitRouter); // all routes about business unit
+server.use('/business-units/', businessUnitRouter); // all routes about business unit
 
 // Error
 server.use((req, res, next) => {
