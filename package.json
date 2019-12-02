@@ -1,0 +1,25 @@
+{
+  "name": "iziwork-challenge-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm": "^6.13.1",
+    "opencage-api-client": "^0.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoax017/Iziwork-Challenge-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hoax017/Iziwork-Challenge-Test/issues"
+  },
+  "homepage": "https://github.com/Hoax017/Iziwork-Challenge-Test#readme"
+}
